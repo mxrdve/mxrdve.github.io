@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox布局完全指南 | 毛晓睿的个人博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">毛晓睿</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn-primary">一起成长 ✨</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-detail">
+        <a href="blog.html" class="back-link">← 返回博客列表</a>
+        
+        <header class="blog-detail-header">
+            <div class="card-badge">🎨 教程</div>
+            <h1>Flexbox布局完全指南</h1>
+            <div class="blog-meta">
+                <span>📅 发布于 2026-01-02</span>
+                <span>⏱️ 约15分钟阅读</span>
+                <span>💜 312 阅读</span>
+            </div>
+        </header>
+
+        <div class="blog-detail-content">
+            <h2>📋 Flexbox简介</h2>
+            <p>
+                Flexbox（弹性布局）是一种一维布局模型，它可以轻松地实现元素的对齐、分布和缩放。
+                它主要用于解决传统布局方法（如float和position）难以实现的对齐问题。
+                Flexbox由容器（flex container）和项目（flex item）组成，
+                通过在容器上设置不同的属性，我们可以控制项目的布局方式。
+            </p>
+
+            <h2>🔧 容器属性</h2>
+            <p>
+                Flex容器有几个重要的属性：
+            </p>
+            <ul>
+                <li><strong>display: flex</strong> - 将元素设置为flex容器</li>
+                <li><strong>flex-direction</strong> - 定义主轴方向（row、row-reverse、column、column-reverse）</li>
+                <li><strong>justify-content</strong> - 定义项目在主轴上的对齐方式</li>
+                <li><strong>align-items</strong> - 定义项目在交叉轴上的对齐方式</li>
+                <li><strong>flex-wrap</strong> - 定义项目是否换行</li>
+                <li><strong>align-content</strong> - 定义多行项目在交叉轴上的对齐方式</li>
+            </ul>
+
+            <h2>🎯 项目属性</h2>
+            <p>
+                项目也有一些重要的属性：
+            </p>
+            <ul>
+                <li><strong>flex-grow</strong> - 定义项目的放大比例</li>
+                <li><strong>flex-shrink</strong> - 定义项目的缩小比例</li>
+                <li><strong>flex-basis</strong> - 定义项目在主轴上的初始大小</li>
+                <li><strong>align-self</strong> - 定义单个项目在交叉轴上的对齐方式，可覆盖align-items</li>
+                <li><strong>order</strong> - 定义项目的排列顺序</li>
+            </ul>
+
+            <h2>💡 实用技巧</h2>
+            <p>
+                Flexbox的使用非常灵活，这里分享几个实用技巧：
+            </p>
+            <ul>
+                <li>使用justify-content和align-items实现元素居中对齐</li>
+                <li>使用flex-grow实现自适应布局</li>
+                <li>使用flex-wrap实现响应式布局</li>
+                <li>使用order调整元素顺序</li>
+            </ul>
+
+            <h2>✨ 结语</h2>
+            <p>
+                Flexbox是现代CSS布局的重要组成部分，它简化了布局的实现方式，
+                提高了开发效率。
+                只要我们掌握了Flexbox的基本概念和属性，
+                就能轻松实现各种复杂的布局效果。
+                希望这篇文章能帮助大家更好地理解和使用Flexbox！
+            </p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">毛晓睿</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p>向着光，勇敢前行</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="blog.html">博客</a>
+                    <a href="about.html">关于我</a>
+                    <a href="contact.html">联系</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">🐙</a>
+                    <a href="#" class="social-link">📧</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 毛晓睿的个人博客 | 用热爱点亮世界</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
