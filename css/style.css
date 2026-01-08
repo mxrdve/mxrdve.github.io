@@ -259,6 +259,212 @@ ul {
     transition: var(--transition-fast);
 }
 
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        gap: 60px;
+        padding: 120px 20px 80px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .hero-visual {
+        max-width: 100%;
+    }
+    
+    .decoration-circles {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 导航栏响应式 */
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background: var(--bg-dark);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-cta {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    /* 英雄区域响应式 */
+    .hero {
+        padding: 100px 20px 60px;
+        gap: 40px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .hero-stats {
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+    
+    /* 技能卡片响应式 */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .skill-card {
+        padding: 28px 24px;
+    }
+    
+    /* 兴趣卡片响应式 */
+    .interests-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+    
+    .interest-card {
+        padding: 28px 24px;
+    }
+    
+    /* 博客卡片响应式 */
+    .blogs-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    /* 座右铭响应式 */
+    .motto-content {
+        padding: 28px 35px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .motto-text {
+        font-size: 16px;
+    }
+    
+    /* 装饰圆圈响应式 */
+    .decoration-circles {
+        height: 300px;
+    }
+    
+    .deco-1 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .deco-2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .deco-3 {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 80px 15px 50px;
+    }
+    
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .hero-badge {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .btn-hero {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        gap: 20px;
+    }
+    
+    .stat-number {
+        font-size: 28px;
+    }
+    
+    .stat-label {
+        font-size: 12px;
+    }
+    
+    /* 技能卡片响应式 */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* 兴趣卡片响应式 */
+    .interests-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* 博客卡片响应式 */
+    .blog-card {
+        padding: 24px;
+    }
+    
+    /* 页脚响应式 */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 /* 英雄区域 */
 .hero {
     min-height: 100vh;

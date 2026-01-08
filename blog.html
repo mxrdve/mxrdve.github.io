@@ -115,9 +115,94 @@
             </div>
             <a href="blog-code-readability.html" class="card-link">继续阅读 →</a>
         </article>
+
+        <!-- 分页组件 -->
+        <div class="pagination">
+            <button class="page-btn" disabled>上一页</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">下一页</button>
+        </div>
     </div>
 
-    <footer class="footer">
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+        <!-- 热门文章 -->
+        <div class="sidebar-section">
+            <h3 class="sidebar-title">
+                <span class="title-icon">🔥</span>
+                热门文章
+            </h3>
+            <ul class="popular-posts">
+                <li class="popular-post-item">
+                    <div class="post-rank">1</div>
+                    <div class="post-info">
+                        <a href="blog-detail.html" class="post-title">我的前端学习之旅：从零到一的蜕变</a>
+                        <span class="post-meta">520 阅读</span>
+                    </div>
+                </li>
+                <li class="popular-post-item">
+                    <div class="post-rank">2</div>
+                    <div class="post-info">
+                        <a href="blog-js-basics.html" class="post-title">JavaScript基础入门笔记</a>
+                        <span class="post-meta">428 阅读</span>
+                    </div>
+                </li>
+                <li class="popular-post-item">
+                    <div class="post-rank">3</div>
+                    <div class="post-info">
+                        <a href="blog-flexbox-guide.html" class="post-title">Flexbox布局完全指南</a>
+                        <span class="post-meta">312 阅读</span>
+                    </div>
+                </li>
+                <li class="popular-post-item">
+                    <div class="post-rank">4</div>
+                    <div class="post-info">
+                        <a href="blog-css-magic.html" class="post-title">CSS魔法：让网页美如画卷</a>
+                        <span class="post-meta">256 阅读</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 文章分类统计 -->
+        <div class="sidebar-section">
+            <h3 class="sidebar-title">
+                <span class="title-icon">📊</span>
+                文章分类
+            </h3>
+            <ul class="category-list">
+                <li class="category-item">
+                    <span class="category-name">精选</span>
+                    <span class="category-count">1</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-name">热门</span>
+                    <span class="category-count">1</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-name">心得</span>
+                    <span class="category-count">1</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-name">教程</span>
+                    <span class="category-count">1</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-name">入门</span>
+                    <span class="category-count">1</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-name">技巧</span>
+                    <span class="category-count">1</span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
